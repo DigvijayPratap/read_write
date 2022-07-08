@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="css/registerPage.css">
+</head>
+<body>
+   
+    <div class="container" >
+        <div class="main">
+             <header>
+                 <h1>Registration Form</h1>
+                 <p>Please fill all valid details..</p>
+             </header>
+             <form action="/register" method="POST">
+            <div class="mainform">
+                 Your Name*: <br>
+                 <input type="text" placeholder="Full Name" name="fullName"><br>
+                 <!--   Gender    -->
+                 <fieldset> 
+                    <legend> Gender</legend>
+                    <input type="radio" name="gender" value="male">Male <br>
+                    <input type="radio" name="gender" value="female">Female<br>
+                    <input type="radio" name="gender" value="other">other<br>
+                 </fieldset>
+                 Your Email*: <br>
+                 <input type="email" placeholder="abc@example.com" name="email"> <br>
+                 Mobile No.: <br>
+                 <input type="number" placeholder="Mobile number" name="mobNumber"><br>
+                 DOB: <br>
+                 <input type="date" placeholder=" Mail Id" name="DOB"> <br>
+                 Occupation: <br>
+                 <input type="text"  placeholder="Example:- Student" name="occupation"> <br>
+                
+                Password*: <br>
+                 <input type="password"  placeholder="Enter Password" name="password"> <br>
+                
+                Conferm Password*: <br>
+                 <input type="text"  placeholder="Conferm Password" name="confermPassword"> <br>
+                
+               <input type="submit" name="Submit" value="Register">
+              
+           </div> </form>
+       </div>
+ </div>
+    
+</body>
+</html>
