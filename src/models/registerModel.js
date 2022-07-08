@@ -21,7 +21,10 @@ const employeeSchema=new mongoose.Schema({
     DOB:{
         type:Date
     },
-    occupation:"String",
+    occupation:{
+        type:"String",
+        maxLength: 10
+    },
     password:{
         type:"String",
         required:true

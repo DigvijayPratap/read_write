@@ -101,7 +101,7 @@ app.post('/login',async (req,res)=>{
 app.get('/register',(req,res)=>{
         res.render("register");
         });
-
+////////////////////////////////////////////////////////////////
 app.post('/register', async (req,res)=>{
             try{
                 if(req.body.confermPassword===req.body.password){
@@ -134,13 +134,21 @@ app.post('/register', async (req,res)=>{
                 else{ res.render("error",{error:"Password and Conferm Password are Not Matching"});  }
                 
             }catch(err){
-                 if(err.keyPattern.email===1){
-                            res.render("error",{error:"Email Already Registered"});
-                 }
-                 else
-                res.status(400).send(err);
+                try{   
+                    if(err.keyPattern.email===1){
+                              res.render("error",{error:"Email Already Registered"});
+                         }
+                    //else
+                    //    res.status(400).send(err);
+                }catch(err){
+                   
+                        res.render("error",{error:"Occupation Can Not More Than 20 Character"});
+                    
+                       
+                }
             }
        });
+////////////////////////////////////////////////////////////////////
 app.listen(port, ()=>{
    // console.log(`running at port ${port}`);
 })
