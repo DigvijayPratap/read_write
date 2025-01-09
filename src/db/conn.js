@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
-//mongoose.connect( "mongodb+srv://Digvijaypratap1212:DDii1212@cluster0.scm7whs.mongodb.net/?retryWrites=true&w=majority" ,
-mongoose.connect("mongodb+srv://Digvijaypratap1212:DDii1212@cluster0.scm7whs.mongodb.net/test",
+mongoose.connect( "mongodb+srv://Digvijaypratap1212:DDii1212@cluster0.scm7whs.mongodb.net/test?retryWrites=true&w=majority" ,
+//mongoose.connect("mongodb+srv://Digvijaypratap1212:DDii1212@cluster0.scm7whs.mongodb.net/test",
 {
     useNewUrlParser:true,
     //useCreateIndex:true,
